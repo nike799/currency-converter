@@ -80,7 +80,7 @@ public class CurrencyServiceImpl implements CurrencyService {
      * This method is scheduled to seeds or update database of every hour.
      * Cron : 0 0 0/1 1/1 * *
      */
-    @Scheduled(cron = "* * * * * *")
+    @Scheduled(cron = "0 0 0/1 1/1 * *")
     private void seedCurrencies() {
         List<SeedCurrencyBindingModel> rawCurrencies;
         try {
